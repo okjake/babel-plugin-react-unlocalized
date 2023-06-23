@@ -1,18 +1,25 @@
 const defaultJsxAttributes = ["aria-label", "label"];
 
-const format = (value) =>
-  value
+function format(value) {
+  return value
     .trim()
     .replace(/ +(?= )/g, "")
     .replace(/\n/g, "");
+}
 
-const test = (value) => value.length > 0 && !/^[^A-Za-z]+$/.test(value);
+function test(value) {
+  return value.length > 0 && !/^[^A-Za-z]+$/.test(value);
+}
 
-const print = (path, value) => console.log(`[${path}]: ${value}`);
+function print(path, value) {
+  console.log(`[${path}]: ${value}`);
+}
 
-const createPath = (filepath, line) => `${filepath}:${line}`;
+function createPath(filepath, line) {
+  return `${filepath}:${line}`;
+}
 
-export default () => {
+module.exports = function detectUnlocalized() {
   return {
     visitor: {
       JSXText(path, state) {

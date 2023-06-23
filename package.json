@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-react-unlocalized",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Babel plugin that shouts when you have untranslated strings in your React codebase",
   "main": "src/index.js",
   "scripts": {
@@ -8,5 +8,5 @@
   },
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "type": "commonjs"
 }
