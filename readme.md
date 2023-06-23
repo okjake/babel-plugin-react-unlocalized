@@ -2,6 +2,8 @@
 
 A [Babel](http://babeljs.io) plugin that shouts when you have unlocalized strings in your React codebase.
 
+Compatible with any i18n library which uses function syntax eg `t('string')`. It won't work with JSX syntax libraries eg `<Trans>string</Trans>`.
+
 ## Setup
 
 ```
